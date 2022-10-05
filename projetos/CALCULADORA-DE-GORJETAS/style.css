@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --gray: hsl(0, 0%, 40%);
+    --ligth-gray: hsl(0, 0%, 90%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+}
+
+body {
+    background: var(--light-grayish-cyan);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+}
+
+.container {
+    width: 700px;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px var(--light-grayish-cyan);
+}
+
+.content-left,
+.content-right {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 12px;
+    color: var(--grayish-cyan);
+}
+
+.content-left p {
+    margin-bottom: 5px;
+}
+
+.content-left input {
+    width: 100%;
+    font-size: 19px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: var(--ligth-gray);
+    text-align: right;
+    color: var(--very-dark-cyan);
+}
+.content-left input:focus {
+    outline: 2px solid var(--strong-cyan);
+}
+
+.number {
+    position: relative;
+}
+
+.number svg {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+#selectTip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#selectTip button {
+    font-size: 19px;
+    padding: 5px;
+    color: white;
+    background: var(--very-dark-cyan);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#selectTip button:hover, #selectTip button.btnActive {
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+#numberOfPeople p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#numberOfPeople p span {
+    color: orange;
+    display: none;
+}
+
+.content-right {
+    background: var(--very-dark-cyan);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+    padding: 30px;
+}
+
+.content-right div div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+.content-right div div p {
+    font-size: 12px;
+}
+
+.content-right div div p span {
+    font-size: 10px;
+    color: var(--grayish-cyan);
+}
+
+.content-right div div input {
+    font-size: 19px;
+    padding: 5px;
+    width: 100%;
+    text-align: right;
+    height: 100%;
+    color: var(--strong-cyan);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: default;
+}
+
+.content-right div div input::placeholder {
+    color: var(--strong-cyan);
+}
+
+.content-right button {
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--very-dark-cyan);
+    background: var(--strong-cyan);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.content-right button:hover {
+    background: var(--light-grayish-cyan);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        position: absolute;
+        top: 20%;
+    }
+
+    .attribution {
+        bottom: -200px;
+    }
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Style the active class, and buttons on mouse-over */
+  .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  }

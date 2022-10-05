@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h3 {
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: hsl(193, 38%, 86%);
+    font-size: 26px;
+    margin: 10% 0;
+}
+
+.container {
+    background-color: hsla(216, 19%, 38%, 0.3);
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.divisoria {
+    width: 90%;
+}
+
+.dado {
+    width: 40%;
+}
+
+button {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+button:hover {
+    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 50px;
+    color: hsl(193, 38%, 86%);
+    position: absolute;
+    bottom: 20px;
+}
+.attribution a { 
+    color: hsl(193, 38%, 86%);
+    text-decoration: none;
+}
+.attribution a:hover { 
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 80%;
+    }
+}

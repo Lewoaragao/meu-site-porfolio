@@ -1,0 +1,606 @@
+/* IMPORTAÇÕES */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu:wght@300;400;700&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    transition: 0.5s;
+    /* background: linear-gradient(45deg, #8a2be2, #bb00ff, #a400e0, rgb(120, 14, 190)); */
+    background-color: #3b3b48;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width: 800px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    /* largura de toda a barra de rolagem */
+}
+
+body::-webkit-scrollbar-track {
+    /* somente barra de rolagem */
+    background: inherit;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* somente botão da barra de rolagem */
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 300px;
+    background: white;
+    color: black;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px white;
+    z-index: 999;
+}
+
+.modal h3,
+.modal p,
+.modal button,
+.modal a {
+    color: black;
+    text-decoration: none;
+}
+
+.modal button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+/* CABECALHO */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: inherit;
+    z-index: 10;
+    background: #4a4a5a;
+}
+
+/* LINKS DO MENU */
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* LOGO */
+.logo {
+    text-align: left;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+}
+
+/* MENU */
+nav ul {
+    list-style: none;
+    text-align: right;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+nav ul.menu {
+    margin-left: 30px;
+}
+
+/* ITENS DO MENU */
+nav ul li {
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+/* PASSAR MOUSE NOS ITENS DO MENU */
+nav ul li:hover {
+    background: black;
+}
+
+/* BOTAO SOBRE E GAME */
+nav ul li.sobre, nav ul li.games {
+    position: relative;
+}
+
+/* SUBMENUS */
+nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+/* AO PASSAR MOUSE NO BOTAO SOBRE MOSTRAR SUBMENU */
+nav ul li.sobre:hover ul, nav ul li.games:hover ul {
+    display: block;
+}
+
+/* ITEM DO SUBMENU DO SOBRE */
+nav ul li ul li {
+    width: 100%;
+    text-align: left;
+    background: black;
+}
+
+nav ul li ul li:hover {
+    background: white;
+}
+
+nav ul li ul li:hover a {
+    color: black;
+}
+
+.menu-mobile {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: none;
+}
+.menu-mobile span.active:after {
+    content: "a";
+}
+
+section#home {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-top: 80px;
+    flex-wrap: wrap;
+}
+
+section#home h1 {
+    padding: 20px;
+    font-size: 28px;
+}
+
+section#home h1 p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* CONTEUDO */
+.container {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+}
+
+.container p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.container ul {
+    padding: 0 20px;
+    list-style: none;
+}
+
+.container ul h2 {
+    color: #c4c4b7;
+    border-bottom: 2px solid #c4c4b7;
+}
+
+.container ul li ul li {
+    text-indent: 20px;
+}
+
+.container ul li {
+    text-align: justify;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+div#minhaVida,
+div#habilidades,
+div#tecnologias {
+    padding-top: 50px;
+}
+
+.lista {
+    list-style: disc;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 10px;
+    position: relative;
+}
+
+.tecnologias img {
+    width: 100px;
+}
+
+.tecnologia {
+    margin: 5px 0;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.tecnologia h3,
+.tecnologias p {
+    color: rgb(40, 40, 40);
+}
+
+.tecnologia span h3 {
+    font-size: 30px;
+}
+
+.tecnologia p {
+    font-size: 15px;
+}
+
+.tecnologia span {
+    position: fixed;
+    background: white;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: 2;
+    text-align: justify;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255 255 255);
+    overflow-y: auto;
+}
+
+.tecnologia span::-webkit-scrollbar {
+    /* largura de toda a barra de rolagem */
+    width: 8px;
+}
+
+.tecnologia span::-webkit-scrollbar-track {
+    /* somente barra de rolagem */
+    background: inherit;
+}
+
+.tecnologia span::-webkit-scrollbar-thumb {
+    /* somente botão da barra de rolagem */
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.tecnologia span label {
+    color: rgb(150, 150, 150);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+.tecnologia span,
+.tecnologia input {
+    display: none;
+}
+
+.tecnologia input:checked~span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    outline: none;
+}
+
+.design {
+    margin: auto;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue);
+    height: 150px;
+    width: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 0 25px 0;
+}
+
+.design p {
+    font-size: 20px;
+    text-shadow: 0 0 10px black;
+}
+
+section#contato {
+    color: rgb(200, 200, 200);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0;
+}
+
+section#contato h4 {
+    margin: 10px;
+}
+
+section#contato h4::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h4#website::before {
+    background-image: url(img/website.png);
+}
+
+h4#github::before {
+    background-image: url(img/github.png);
+}
+
+h4#linkedin::before {
+    background-image: url(img/linkedin.png);
+}
+
+h4#instagram::before {
+    background-image: url(img/instagram.png);
+}
+
+h4#whatsapp::before {
+    background-image: url(img/whatsapp.png);
+}
+
+h4#telefone::before {
+    background-image: url(img/telefone.png);
+}
+
+section#contato a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+section#contato a:hover {
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* LINKS DO RODAPE */
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer div.contador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.contador p {
+    margin-right: 10px;
+}
+
+/* PÁGINA DE GAMES */
+.container #gameDescription {
+    display: flex;
+    position: relative;
+}
+
+.container #gameDescription a {
+    background: #a400e0;
+    box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-size: 18px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.container #gameDescription a:hover {
+    background: black;
+}
+
+.jogo {
+    margin-top: 50px;
+}
+
+/* PÁGINA DE PROJETOS */
+.containerProjetos {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    border: 2px solid hsl(150, 100%, 66%);
+    text-align: left;
+}
+
+.containerProjetos h1 {
+    color: hsl(193, 38%, 86%);
+}
+.containerProjetos ul {
+    margin-top: 10px;
+}
+.containerProjetos li {
+    color: hsl(150, 100%, 66%);
+    margin: 3px;
+}
+
+.containerProjetos a {
+    text-decoration: none;
+    color: hsl(150, 100%, 66%);
+}
+.containerProjetos a:hover {
+    text-decoration: underline;
+}
+
+.containerProjetos .attribution {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    nav ul.menu {
+        margin-left: 0;
+    }
+
+    section#home {
+        padding-top: 100px;
+        justify-content: center;
+    }
+
+    div#minhaVida,
+    div#habilidades,
+    div#tecnologias {
+        padding-top: 100px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: flex;
+    }
+    nav ul li ul {
+        display: none;
+        position: absolute;
+    }
+    nav ul li.sobre:hover ul, nav ul li.games:hover ul {
+        width: 100%;
+        text-align: left;
+        background: black;
+        position: absolute;
+        top: 0;
+        right: 95px;
+    }
+
+    .menu {
+        position: fixed;
+        top: -200;
+        right: 0;
+        background: #4a4a5a;
+        display: none;
+    }
+    .menu.active {
+        display: block;
+        top: 45px;
+        right: 0;
+        animation: aparecer 1s;
+    }
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .menu-mobile {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    section#contato {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .tecnologia span {
+        width: 95%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div:first-child {
+        margin-bottom: 10px;
+    }
+}
