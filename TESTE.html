@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- START SEO -->
+    <!-- google start -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T48CBWD');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220983904-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-220983904-1');
+    </script>
+    <!-- google end -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="lewoaragao" content="lewoaragao">
+    <meta name="description" content="Oi, eu sou o Leonardo Aragão Desenvolvedor Front-end e Designer UX / UI.">
+    <meta name="keywords"
+        content="lewoaragao, leonardo aragao, leo aragao, sites, web, desenvolvimento, frontend, ui designer, ux designer, ux, designer programador, iuricode, front-end, designer, ui, leonardo, freelancer, freela, website, portfólio, portfolio, criacao de site">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="lewoaragao 2022">
+    <meta name="revised" content="03/03/2022">
+    <meta property="og:image" content="https://lewoaragao.com.br/img/imagem-site-lewoaragao.png">
+    <meta property="og:title" content="Lewoaragao - Desenvolvedor Front-end e Designer UX / UI">
+    <meta property="og:description" content="Desenvolvedor Front-end e Designer UX / UI">
+    <title>Lewoaragao | Desenvolvedor Front-end | Designer UX / UI | Criação de Sites</title>
+    <!-- END SEO -->
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="/img/favicon_io/favicon.ico" />
+    <link rel="mask-icon" href="imgs/favicon_io/favicon.ico">
+    <link rel="shortcut icon" href="imgs/favicon_io/favicon.ico">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T48CBWD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <h3>&lt; Lewoaragao &gt;</h3>
+            </a>
+        </div>
+
+        <button class="menu-mobile">
+            <span class="material-icons">
+                menu
+                </span>
+        </button>
+        <ul class="menu">
+            <li>
+                <a href="#home">
+                    <span class="material-icons" style="font-size: 18px; line-height: 1;">
+                        home
+                    </span> Home
+                </a>
+            </li>
+            <li class="sobre">
+                <a href="#minhaVida">
+                    <span class="material-icons" style="font-size: 18px; line-height: 1;">
+                        perm_identity
+                    </span> Sobre
+                </a>
+
+                <ul>
+                    <li><a href="#minhaVida">Minha vida</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="projetos/index.html">
+                    <span class="material-icons" style="font-size: 18px; line-height: 1;">
+                        laptop
+                    </span> Projetos
+                </a>
+            </li>
+
+            <li> <a href="#contato">
+                    <span class="material-icons" style="font-size: 18px;">
+                        contacts
+                    </span> Contato
+                </a>
+            </li>
+
+            <li class="games">
+                <a href="games.html">
+                    <span class="material-icons" style="font-size: 18px;">
+                        sports_esports
+                    </span> Games
+                </a>
+
+                <ul>
+                    <li><a href="/jogo-da-memoria/index.html">Jogo da Memória</a></li>
+                    <li><a href="/jogo-da-cobrinha/index.html">Jogo da Cobrinha</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>
+            <p>Oi, eu sou o</p> Leonardo Aragão
+            <p>Desenvolvedor Front-end e</p>
+            <p>Designer UX / UI.</p>
+        </h1>
+        <img src="img/img-apresentacao.PNG" alt="Imagem com pessoa no notebook." width="300">
+    </section>
+
+    <div class="modal">
+        <button class="modalButton" onclick="fecharModal()">x</button>
+        <div>
+            <h3>Olá, seja bem vindo(a)</h3>
+            <p>Ao meu site portólio, espero que goste! &#128516;</p>
+        </div>
+
+        <div>
+            <a href="http://www.instagram.com/lewoaragao" target="_blank">&copy; 2022 Lewoaragao</a>
+        </div>
+        <div class="contador">
+            <p>Visitas até o momento: </p>
+            <img src='https://contador.s12.com.br/img-8dDcW66y4C48bBYw-6.gif' alt='acesso gratis'></a>
+            <script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=8dDcW66y4C48bBYw'></script>
+            <a href='https://meuip.page/qual-e-o-meu-ip/' target='_blank' style="display: none">
+                <img src='https://img.meuip.page/selo-8B4aD853zy4cwwba.gif' alt='clique aqui'></a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="minhaVida">
+            <h1>Um pouco sobre mim...</h1>
+            <p>Sou formado em Engenharia Civil com especialização em Segurança do Trabalho, atualmente estou cursando
+                Análise e Desenvolvimento de Sistemas e mesmo antes de começar as aulas já estava estudando com
+                conteúdos da
+                internet, cursos, paletras, webnários, entre outros. Gosto aprender, ler e estudar sobre novas
+                tecnológias.
+            </p>
+
+            <p>Meu objetivo é me tornar um Full Stack Developer, já estudei uma boa parte tanto de Front End quanto de
+                Back
+                End, porém, no momento estou focando no Front End para me aprofundar no assunto e depois voltar para o
+                Back
+                End, rumo a conquista do meu objetivo.</p>
+        </div>
+
+        <div id="habilidades">
+            <h1>Habilidades</h1>
+            <ul>
+                <li>
+                    <h2>Desenvolvimento web</h2>
+                    <ul>
+                        <li>É o termo utilizado para descrever o desenvolvimento de sites, na Internet ou numa intranet.
+                            O
+                            profissional que trabalha desenvolvendo websites pode ser um web designer (desenvolvedor do
+                            layout) ou um web developer (desenvolvedor de sistemas). O desenvolvimento refere-se a um
+                            processo de construção e testes do software especifico para a web, com a finalidade de se
+                            obter
+                            um conjunto de programas, que satisfazem as funções pretendidas, quer em termos de
+                            facilidade de
+                            uso ou compatibilidade com outros programas existentes. O desenvolvimento web pode variar
+                            desde
+                            simples páginas estáticas a aplicações ricas, comércios eletrônicos ou redes sociais.</li>
+
+                        <li>Alguns do tipos de site que crio são:</li>
+                        <ul>
+                            <li class="lista">Blog</li>
+                            <li class="lista">Porftólio</li>
+                            <li class="lista">Página de captura</li>
+                            <li class="lista">Sites para empresas</li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Web design</h2>
+                    <ul>
+                        <li>É o profissional competente para a elaboração do projeto estético e funcional de um website,
+                            popularmente conhecido como o profissional responsável pela criação de websites ou páginas
+                            de
+                            internet. Para o desenvolvimento de websites esse profissional deve ter a compreensão da
+                            aplicação em mídia eletrônica de disciplinas como: teoria das cores, tipografia, arquitetura
+                            de
+                            informação, semiótica, usabilidade, e conhecimento de linguagens de estruturação e
+                            formatação de
+                            documentos hiper textuais como XHTML (Extensible Hypertext Markup Language) e CSS (Cascade
+                            Style
+                            Sheet). Para a aplicação desse conhecimento, de forma geral, o web designer recorre a
+                            softwares
+                            de tratamento e edição de imagens, desenho e codificadores.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>UX (user experiencie) / UI (user interface)</h2>
+                    <ul>
+                        <li>Tanto em User Experience (UX) quanto User Interface (UI), a excelente experiência do
+                            usuário/cliente é a chave-mestra. A área de UX trata de como uma pessoa se sente enquanto
+                            usa
+                            qualquer produto ou serviço, digital ou não, oferecido pela sua empresa e tem a ver com a
+                            sensação dessa pessoa, depois deste uso.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>E-commerce</h2>
+                    <ul>
+                        <li>O e-commerce funciona como uma loja virtual e representa um excelente canal de venda online
+                            para
+                            as empresas. Na prática, significa que o lojista pode comercializar os seus produtos por
+                            meio de
+                            um site exclusivo e personalizado e, se preferir, centralizar ali as suas operações.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Plugins</h2>
+                    <ul>
+                        <li>Integração de plugins do site com as redes sociais, por exemplo, facilitando assim o contato
+                            e
+                            melhorando a experiência do usuário, fazendo com que tenha mais dinâmica a página acessada.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="tecnologias">
+            <h1>Tecnologias</h1>
+            Clique sobre a imagem para saber mais.
+            <div class="tecnologias">
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia1">
+                    <label for="tecnologia1">
+                        <img src="img/html.png" alt="Logo HTML">
+                    </label>
+
+                    <span>
+                        <h3>HTML</h3>
+                        <label for="tecnologia1">x</label>
+                        <p>
+                            (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o
+                            significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são
+                            usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento
+                            (JavaScript) de uma página da web.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia2">
+                    <label for="tecnologia2">
+                        <img src="img/css.png" alt="Logo CSS">
+                    </label>
+
+                    <span>
+                        <h3>CSS</h3>
+                        <label for="tecnologia2">x</label>
+                        <p>
+                            (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo
+                            (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML
+                            (incluindo
+                            várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são
+                            mostrados
+                            na tela, no papel, na fala ou em outras mídias.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia3">
+                    <label for="tecnologia3">
+                        <img src="img/javascript.png" alt="Logo JavaScript">
+                    </label>
+
+                    <span>
+                        <h3>JavaScript</h3>
+                        <label for="tecnologia3">x</label>
+                        <p>
+                            (frequentemente abreviado como JS) é uma linguagem de programação interpretada
+                            estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma
+                            (protótipos,
+                            orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma
+                            das
+                            três
+                            principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e,
+                            portanto,
+                            é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os
+                            principais
+                            navegadores têm um mecanismo JavaScript dedicado para executá-lo.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia4">
+                    <label for="tecnologia4">
+                        <img src="img/firebase.png" alt="Logo Firebase">
+                    </label>
+
+                    <span>
+                        <h3>Firebase</h3>
+                        <label for="tecnologia4">x</label>
+                        <p>
+                            É uma plataforma desenvolvida pelo Google para criar aplicativos móveis e web . Foi
+                            originalmente uma empresa independente fundada em 2011. Em 2014, o Google adquiriu a
+                            plataforma e agora é sua principal oferta para desenvolvimento de aplicativos.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia5">
+                    <label for="tecnologia5">
+                        <img src="img/jquery.png" alt="Logo jQuery">
+                    </label>
+
+                    <span>
+                        <h3>jQuery</h3>
+                        <label for="tecnologia5">x</label>
+                        <p>
+                            É uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para
+                            simplificar os scripts interpretados no navegador do cliente (client-side). Usada por cerca
+                            de 74.4% dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas
+                            JavaScript. Esta biblioteca é um projeto da Fundação JS (em inglês: JS Foundation), que por
+                            sua
+                            vez faz parte da Fundação Linux (em inglês: Linux Foundation) e seu desenvolvimento é
+                            realizado
+                            pelo time jQuery (em inglês: The jQuery Team).
+                        </p>
+
+                        <p>
+                            jQuery é uma biblioteca de código aberto que utiliza a licença MIT em seu código-fonte. A
+                            sintaxe do
+                            jQuery foi desenvolvida para tornar mais simples a navegação do documento HTML, a seleção de
+                            elementos DOM, criar animações, manipular eventos, desenvolver aplicações AJAX e criação de
+                            plugins
+                            sobre ela. Tais facilidades permitem aos desenvolvedores criarem camadas de abstração para
+                            interações de baixo nível de modo simplificado em aplicações web dinâmicas de grande
+                            complexidade.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia6">
+                    <label for="tecnologia6">
+                        <img src="img/node.png" alt="Logo Node">
+                    </label>
+
+                    <span>
+                        <h3>Node</h3>
+                        <label for="tecnologia6">x</label>
+                        <p>É um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que
+                            permite a execução de códigos JavaScript fora de um navegador web.</p>
+
+                        <p>O runtime de JavaScript é constituído pelos seguintes comandos: node package manager (npm), e
+                            npx
+                            (node package extractor); onde o primeiro tem o propósito de executar código armazenado num
+                            package de nodejs, instalando o software globalmente ou localmente, já o segundo tem o
+                            propósito
+                            de instalar a nível local o código instalado globalmente. Um exemplo disso é o npx
+                            create-react-app que tem como propósito instalar a nível local um template vazio de um site
+                            de
+                            react, pronto a ser usado, através de uma fórmula instalada com npm.</p>
+
+                        <p>A tecnologia robusta C++ e boost, como era conhecido no final da década de 1990 (quando a
+                            sintaxe
+                            foi completamente alterada, mantendo-se para fins de compatibilidade backward). Usando
+                            também
+                            recorrentemente para este fim a linguagem bindings com sistemas de JavaScript mais
+                            universais,
+                            garantindo que há o mínimo de deprecações no código com o passar do tempo. Exceções disso,
+                            são
+                            alguns de JavaScript vanilla, que não são incluídos em node, que podem ser importados para
+                            nodejs. Um exemplo disso é o comando readine(), que precisa de ser importado e sofre de
+                            algumas
+                            alterações. Ainda assim o código é bem mais buletproof do que o código de Python, que
+                            depreca
+                            com relativa facilidade.</p>
+
+                        <p>O código de nodejs é baseado na arquitetura event-driven, capaz de entrada/saída assíncrona.
+                            Otimizado para ser corrido em tempo real tratando-se também de um ditribuído.</p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia9">
+                    <label for="tecnologia9">
+                        <img src="img/react.png" alt="Logo React">
+                    </label>
+
+                    <span>
+                        <h3>React</h3>
+                        <label for="tecnologia9">x</label>
+                        <p>(também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco
+                            em
+                            criar interfaces de usuário (frontend) em páginas web. É mantido pelo Facebook, Instagram,
+                            outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da
+                            Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.</p>
+
+                        <p>Em 2015, o Facebook anunciou o módulo React Native, que em conjunto com o React, possibilita
+                            o
+                            desenvolvimento de aplicativos para Android e iOS utilizando componentes de interface de
+                            usuário
+                            nativos de ambas plataformas, sem precisar recorrer ao HTML.</p>
+
+                        <p>Na pesquisa de 2018 sobre hábitos de desenvolvedores do site Stack Overflow, o React foi a
+                            terceira biblioteca ou framework mais citado pelos usuários e desenvolvedores profissionais,
+                            ficando atrás somente do Node.js e Angular, respectivamente.</p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia10">
+                    <label for="tecnologia10">
+                        <img src="img/java-logo.svg" alt="Logo Java">
+                    </label>
+
+                    <span>
+                        <h3>Java</h3>
+                        <label for="tecnologia10">x</label>
+                        <p>É uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma
+                            equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o
+                            Java foi adquirido pela empresa Oracle Corporation. Diferente das linguagens de programação
+                            modernas, que são compiladas para código nativo, a linguagem Java é compilada para um
+                            bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida
+                            pela sua abreviação JVM). A linguagem de programação Java é a linguagem convencional da
+                            Plataforma Java, mas não é a sua única linguagem. J2ME Para programas e jogos de computador,
+                            celular, calculadoras, ou até mesmo o rádio do carro.</p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia11">
+                    <label for="tecnologia11">
+                        <img src="img/my-sql-logo.svg" alt="Logo MySQL">
+                    </label>
+
+                    <span>
+                        <h3>MySQL</h3>
+                        <label for="tecnologia11">x</label>
+                        <p>O MySQL é um sistema de gerenciamento de banco de dados (SGBD), que utiliza a linguagem SQL
+                            (Linguagem de Consulta Estruturada, do inglês Structured Query Language) como interface. É
+                            atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle
+                            Corporation, com mais de 10 milhões de instalações pelo mundo.</p>
+
+                        <p>Entre os usuários do banco de dados MySQL estão: NASA, Friendster, Banco Bradesco, Dataprev,
+                            HP, Nokia, Sony, Lufthansa, U.S. Army, U.S. Federal Reserve Bank, Associated Press, Alcatel,
+                            Slashdot, Cisco Systems, Google, entre outros.</p>
+                    </span>
+                </div>
+
+                <div class="tecnologia">
+                    <input type="checkbox" id="tecnologia12">
+                    <label for="tecnologia12">
+                        <img src="img/sql-server-logo.svg" alt="Logo SQLServer">
+                    </label>
+
+                    <span>
+                        <h3>SQL Server</h3>
+                        <label for="tecnologia12">x</label>
+                        <p>O Microsoft SQL Server é um sistema gerenciador de Banco de dados relacional (SGBD)
+                            desenvolvido pela Sybase em parceria com a Microsoft.</p>
+
+                        <p>Esta parceria durou até 1994, com o lançamento da versão para Windows NT e desde então a
+                            Microsoft mantém a manutenção do produto.</p>
+
+                        <p>Como um Banco de dados, é um produto de software cuja principal função é a de armazenar e
+                            recuperar dados solicitados por outras aplicações de software, seja aqueles no mesmo
+                            computador ou aqueles em execução em outro computador através de uma rede (incluindo a
+                            Internet).</p>
+
+                        <p>Há várias diferentes edições do Microsoft SQL Server destinadas a públicos diferentes e para
+                            diferentes cargas de trabalho (variando de pequenas aplicações que armazenam e recuperam
+                            dados no mesmo computador, a milhões de usuários e computadores que acessam grandes
+                            quantidades de dados a partir da Internet ao mesmo tempo).</p>
+
+                        <p>Suas linguagens de consulta primárias são Transact-SQL (T-SQL) e ANSI SQL.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="design">
+        <div>
+            <p>DESIGN COMBINANDO COM SUA MARCA</p>
+        </div>
+    </div>
+
+    <section id="contato">
+        <h4 id="website"><a href="#">Site</a></h4>
+        <h4 id="github"><a href="https://github.com/Lewoaragao" target="_blank">Github</a></h4>
+        <h4 id="linkedin"><a href="https://linkedin.com/in/lewoaragao" target="_blank">Linkedin</a></h4>
+        <h4 id="instagram"><a href="https://instagram.com/lewoaragao" target="_blank">Instagram</a></h4>
+        <h4 id="whatsapp"><a
+                href="https://wa.me/5585997972854?text=Oi,%20tenho%20interesse%20em%20um%20serviço%20de%20desenvolvimento%20web%20seu."
+                target="_blank">Whatsapp</a></h4>
+        <h4 id="telefone"><a href="tel:85997972854">(85) 9 9797-2854</a></h4>
+
+    </section>
+
+    <hr color="orange">
+
+    <footer>
+        <div>
+            <a href="http://www.instagram.com/lewoaragao" target="_blank">&copy; 2022 Lewoaragao</a>
+
+        </div>
+        <div class="contador">
+            <p>Visitas até o momento: </p>
+            <img src='https://contador.s12.com.br/img-8dDcW66y4C48bBYw-6.gif' alt='acesso gratis'></a>
+            <script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=8dDcW66y4C48bBYw'></script>
+            <a href='https://meuip.page/qual-e-o-meu-ip/' target='_blank' style="display: none">
+                <img src='https://img.meuip.page/selo-8B4aD853zy4cwwba.gif' alt='clique aqui'></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
