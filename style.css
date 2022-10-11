@@ -461,39 +461,6 @@ footer div.contador p {
     margin-top: 50px;
 }
 
-/* PÁGINA DE PROJETOS */
-.containerProjetos {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    border: 2px solid hsl(150, 100%, 66%);
-    text-align: left;
-}
-
-.containerProjetos h1 {
-    color: hsl(193, 38%, 86%);
-}
-.containerProjetos ul {
-    margin-top: 10px;
-}
-.containerProjetos li {
-    color: hsl(150, 100%, 66%);
-    margin: 3px;
-}
-
-.containerProjetos a {
-    text-decoration: none;
-    color: hsl(150, 100%, 66%);
-}
-.containerProjetos a:hover {
-    text-decoration: underline;
-}
-
-.containerProjetos .attribution {
-    font-size: 12px;
-}
-
 @media screen and (max-width: 900px) {
     body {
         width: 100%;
