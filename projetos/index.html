@@ -2,40 +2,204 @@
 <html lang="pt-br">
 
 <head>
+    <!-- START SEO -->
+    <!-- google start -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T48CBWD');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220983904-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-220983904-1');
+    </script>
+    <!-- google end -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    <meta name="lewoaragao" content="lewoaragao">
+    <meta name="description" content="Oi, eu sou o Leonardo Aragão Desenvolvedor Front-end e Designer UX / UI.">
+    <meta name="keywords"
+        content="lewoaragao, leonardo aragao, leo aragao, sites, web, desenvolvimento, frontend, ui designer, ux designer, ux, designer programador, iuricode, front-end, designer, ui, leonardo, freelancer, freela, website, portfólio, portfolio, criacao de site">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="lewoaragao 2022">
+    <meta name="revised" content="03/03/2022">
+    <meta property="og:image" content="https://lewoaragao.com.br/img/imagem-site-lewoaragao.png">
+    <meta property="og:title" content="Lewoaragao - Desenvolvedor Front-end e Designer UX / UI">
+    <meta property="og:description" content="Desenvolvedor Front-end e Designer UX / UI">
+    <title>Lewoaragao | Desenvolvedor Front-end | Designer UX / UI | Criação de Sites</title>
+    <!-- END SEO -->
+
+    <link rel="stylesheet" href="styleProjetos.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../styleProjetos.css">
-    <link rel="icon" href="../img/favicon_io/favicon.ico" />
-    <link rel="mask-icon" href="../imgs/favicon_io/favicon.ico">
-    <link rel="shortcut icon" href="../imgs/favicon_io/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="/img/favicon_io/favicon.ico" />
+    <link rel="mask-icon" href="imgs/favicon_io/favicon.ico">
+    <link rel="shortcut icon" href="imgs/favicon_io/favicon.ico">
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T48CBWD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <h3>&lt; Lewoaragao &gt;</h3>
+            </a>
+        </div>
+
+        <button class="menu-mobile">
+            <span class="material-icons">
+                menu
+                </span>
+        </button>
+        <ul class="menu">
+            <li>
+                <a href="#home">
+                    <span class="material-icons" style="font-size: 18px; line-height: 1;">
+                        home
+                    </span> Início
+                </a>
+            </li>
+            <li class="sobre">
+                <a href="/index.html#minhaVida">
+                    <span class="material-icons" style="font-size: 18px; line-height: 1;">
+                        perm_identity
+                    </span> Sobre
+                </a>
+
+                <ul>
+                    <li><a href="/index.html#minhaVida">Minha vida</a></li>
+                    <li><a href="/index.html#habilidades">Habilidades</a></li>
+                    <li><a href="/index.html#tecnologias">Tecnologias</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="material-icons" style="font-size: 18px; line-height: 1;">
+                        laptop
+                    </span> Projetos
+                </a>
+            </li>
+
+            <li> <a href="/index.html#contato">
+                    <span class="material-icons" style="font-size: 18px;">
+                        contacts
+                    </span> Contato
+                </a>
+            </li>
+
+            <li class="games">
+                <a href="/games.html">
+                    <span class="material-icons" style="font-size: 18px;">
+                        sports_esports
+                    </span> Games
+                </a>
+
+                <ul>
+                    <li><a href="/projetos/jogo-da-memoria/index.html">Jogo da Memória</a></li>
+                    <li><a href="/projetos/jogo-da-cobrinha/index.html">Jogo da Cobrinha</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <section class="containerProjetos">
         <div>
             <h1>Projetos:</h1>
-            <ul>
-                <li><a href="https://lewoaragao.github.io/APP-DE-TAREFAS/">App de Tarefas com JS e SQLite</a></li>
-                <li><a href="CALCULADORA-DE-GORJETAS/index.html">Calculadora de gorjetas</a></li>
-                <li><a href="COMPONENTE-QR-CODE/index.html">Componente QR Code</a></li>
-                <li><a href="COMPONENTE-DO-CARTAO-DE-VISUALIZACAO-NFT/index.html">Componente do cartão de visualização
-                        NFT</a></li>
-                <li><a href="gerador-de-conselhos/index.html">Gerador de Conselhos</a></li>
-                <li><a href="jogo-da-cobrinha/index.html">Jogo da Cobrinha</a></li>
-                <li><a href="jogo-da-memoria/index.html">Jogo da Memória</a></li>
-                <li><a href="PAGINA-DO-PRODUTO-DE-COMERCIO-ELETRONICO/index.html">Página do produto de comércio
-                        eletrônico</a></li>
-            </ul>
 
-            <div>
-                <h1><a href="/index.html">Voltar</a></h1>
+            <div id="apresentacaoProjetos">
+                <div>
+                    <h3>Aplicativo de Tarefas</h3>
+                    <p>
+                        Simulador de aplicativo de tarefas online
+                        feito com JavaScript e SQLite.
+                    </p>
+                    <a href="https://lewoaragao.github.io/APP-DE-TAREFAS/">Conferir</a>
+                </div>
+
+                <div>
+                    <h3>Calculadora de gorjetas</h3>
+                    <p>
+                        Faz o cálculo das gorjetas com divisão
+                        entre os amigos.
+                    </p>
+                    <a href="CALCULADORA-DE-GORJETAS/index.html">Conferir</a>
+                </div>
+
+                <div>
+                    <h3>Componente do cartão de visualização NFT</h3>
+                    <p>
+                        Design de um cartão com NFT.
+                    </p>
+                    <a href="COMPONENTE-DO-CARTAO-DE-VISUALIZACAO-NFT/index.html">Conferir</a>
+                </div>
+
+                <div>
+                    <h3>Gerador de Conselhos</h3>
+                    <p>
+                        Gera conselhos aleatórios.
+                    </p>
+                    <a href="gerador-de-conselhos/index.html">Conferir</a>
+                </div>
+
+                <div>
+                    <h3>Jogo da Cobrinha</h3>
+                    <p>
+                        Jogo clássico da Cobrinha.
+                    </p>
+                    <a href="jogo-da-cobrinha/index.html">Conferir</a>
+                </div>
+
+                <div>
+                    <h3>Jogo da Memória</h3>
+                    <p>
+                        Jogo da Memória criado com JavaScript puro.
+                    </p>
+                    <a href="jogo-da-memoria/index.html">Conferir</a>
+                </div>
+
+                <div>
+                    <h3>Página do produto de comércio
+                        eletrônico</h3>
+                    <p>
+                        Demonstração de página com produto de uma
+                        loja virtual, sendo visualizado.
+                    </p>
+                    <a href="jogo-da-memoria/index.html">Conferir</a>
+                </div>
             </div>
         </div>
 
-        <div class="attribution">
+        <div class="attribution margin-top">
             Coded by <a href="https://www.github.com/lewoaragao" target="_blank">Lewoaragao</a>.
         </div>
     </section>
