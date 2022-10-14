@@ -4,36 +4,49 @@ const CARD = 'card'
 const ICON = 'icon'
 
 function selecionaTipo() {
-    console.log(game.techs)
     var tipoSelecionado = document.getElementById('tipoSelecionado').value
-    console.log(tipoSelecionado)
-    switch(tipoSelecionado) {
+    switch (tipoSelecionado) {
         case 'tecnologias':
             game.techs = ['/tecnologias/bootstrap',
-            '/tecnologias/css',
-            '/tecnologias/electron',
-            '/tecnologias/firebase',
-            '/tecnologias/html',
-            '/tecnologias/javascript',
-            '/tecnologias/jquery',
-            '/tecnologias/mongo',
-            '/tecnologias/node',
-            '/tecnologias/react']
-            
+                '/tecnologias/css',
+                '/tecnologias/electron',
+                '/tecnologias/firebase',
+                '/tecnologias/html',
+                '/tecnologias/javascript',
+                '/tecnologias/jquery',
+                '/tecnologias/mongo',
+                '/tecnologias/node',
+                '/tecnologias/react']
+
             startGame()
             break
 
         case 'animais':
             game.techs = ['/animais/leao',
-            '/animais/cobra',
-            '/animais/onca',
-            '/animais/baleia',
-            '/animais/cachorro',
-            '/animais/gato',
-            '/animais/galinha',
-            '/animais/elefante',
-            '/animais/macaco',
-            '/animais/urso']
+                '/animais/cobra',
+                '/animais/onca',
+                '/animais/baleia',
+                '/animais/cachorro',
+                '/animais/gato',
+                '/animais/galinha',
+                '/animais/elefante',
+                '/animais/girafa',
+                '/animais/urso']
+
+            startGame()
+            break
+
+        case 'flores':
+            game.techs = ['/flores/vermelha',
+                '/flores/margarida',
+                '/flores/cravo',
+                '/flores/lotus',
+                '/flores/azul',
+                '/flores/rosa',
+                '/flores/ipes',
+                '/flores/branco',
+                '/flores/girassol',
+                '/flores/colorida']
 
             startGame()
             break
